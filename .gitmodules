@@ -1,0 +1,3 @@
+[submodule "external/vivado-library"]
+	path = external/vivado-library
+	url = https://github.com/DigilentInc/vivado-library.git
