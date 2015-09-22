@@ -43,9 +43,9 @@ module test_filter(
     output vid_pVDE_O;
     output PixelClk_O;
 
-    assign vid_pData_O[23:16] = vid_pData_I[23:16];
+    assign vid_pData_O[23:16] = vid_pData_I[7:0];
     assign vid_pData_O[15:8] = vid_pData_I[23:16];
-    assign vid_pData_O[7:0] = vid_pData_I[23:16];
+    assign vid_pData_O[7:0] = vid_pData_I[15:8];
     assign vid_pVSync_O = vid_pVSync_I;
     assign vid_pHSync_O = vid_pHSync_I;
     assign vid_pVDE_O = vid_pVDE_I;
